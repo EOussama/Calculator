@@ -1,0 +1,17 @@
+C:\Users\Eoussama\source\repos\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Eoussama\source\repos\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Eoussama\source\repos\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Eoussama\source\repos\Calculator\Calculator\bin\Debug\Calculator.xml
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.vbprojResolveAssemblyReference.cache
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\MainWindow.g.vb
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Application.g.vb
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.Resources.resources
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.cache
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.vbproj.CoreCompileInputs.cache
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.xml
+C:\Users\Eoussama\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
