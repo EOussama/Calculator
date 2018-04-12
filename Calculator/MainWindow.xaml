@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="331.333" Width="384.5">
+        Title="Calculator" Height="331.333" Width="384.5" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -29,6 +29,7 @@
 
         <!-- First row -->
         <TextBox
+            x:Name="resCreen"
             Width="335"
             Height="50"
             Grid.Row="1"
@@ -37,10 +38,11 @@
             Margin="0, 0, 0, 10"
             Padding="10, 7"
             FontSize="24"
-            Text="10.0"/>
+            IsReadOnly="True"/>
 
         <!-- Second row -->
         <Button
+            x:Name="CE"
             Grid.Row="2"
             Grid.Column="2"
             BorderThickness="0"
@@ -48,6 +50,7 @@
             Content="CE"/>
 
         <Button
+            x:Name="C"
             Grid.Row="2"
             Grid.Column="3"
             BorderThickness="0"
@@ -55,6 +58,7 @@
             Content="C"/>
 
         <Button
+            x:Name="optDiv"
             Grid.Row="2"
             Grid.Column="4"
             BorderThickness="0"
@@ -63,6 +67,7 @@
 
         <!-- Third row -->
         <Button
+            x:Name="num7"
             Grid.Row="3"
             Grid.Column="1"
             BorderThickness="0"
@@ -70,6 +75,7 @@
             Content="7"/>
 
         <Button
+            x:Name="num8"
             Grid.Row="3"
             Grid.Column="2"
             BorderThickness="0"
@@ -77,6 +83,7 @@
             Content="8"/>
 
         <Button
+            x:Name="num9"
             Grid.Row="3"
             Grid.Column="3"
             BorderThickness="0"
@@ -84,6 +91,7 @@
             Content="9"/>
 
         <Button
+            x:Name="optMul"
             Grid.Row="3"
             Grid.Column="4"
             BorderThickness="0"
@@ -92,6 +100,7 @@
 
         <!-- Fourth row -->
         <Button
+            x:Name="num4"
             Grid.Row="4"
             Grid.Column="1"
             BorderThickness="0"
@@ -99,6 +108,7 @@
             Content="4"/>
 
         <Button
+            x:Name="num5"
             Grid.Row="4"
             Grid.Column="2"
             BorderThickness="0"
@@ -106,6 +116,7 @@
             Content="5"/>
 
         <Button
+            x:Name="num6"
             Grid.Row="4"
             Grid.Column="3"
             BorderThickness="0"
@@ -113,6 +124,7 @@
             Content="6"/>
 
         <Button
+            x:Name="optMin"
             Grid.Row="4"
             Grid.Column="4"
             BorderThickness="0"
@@ -121,6 +133,7 @@
 
         <!-- Fifth row -->
         <Button
+            x:Name="num1"
             Grid.Row="5"
             Grid.Column="1"
             BorderThickness="0"
@@ -128,6 +141,7 @@
             Content="1"/>
 
         <Button
+            x:Name="num2"
             Grid.Row="5"
             Grid.Column="2"
             BorderThickness="0"
@@ -135,6 +149,7 @@
             Content="2"/>
 
         <Button
+            x:Name="num3"
             Grid.Row="5"
             Grid.Column="3"
             BorderThickness="0"
@@ -146,10 +161,12 @@
             Grid.Column="4"
             BorderThickness="0"
             Cursor="Hand"
-            Content="+"/>
+            Content="+" 
+            Click="optPlus"/>
 
         <!-- Sixth row -->
         <Button
+            x:Name="num0"
             Grid.Row="6"
             Grid.Column="1"
             BorderThickness="0"
@@ -157,6 +174,7 @@
             Content="0"/>
 
         <Button
+            x:Name="numDec"
             Grid.Row="6"
             Grid.Column="2"
             BorderThickness="0"
@@ -169,6 +187,6 @@
             Grid.ColumnSpan="2"
             BorderThickness="0"
             Cursor="Hand"
-            Content="="/>
+            Content="=" Click="Button_Click"/>
     </Grid>
 </Window>
