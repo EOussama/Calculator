@@ -5,188 +5,187 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="331.333" Width="384.5" Loaded="Window_Loaded">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
+        Title="Calculator" Height="418" Width="384" Loaded="Window_Loaded">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="20"/>
-        </Grid.RowDefinitions>
+    <Border Margin="15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        <!-- First row -->
-        <TextBox
-            x:Name="resCreen"
-            Width="335"
-            Height="50"
-            Grid.Row="1"
-            Grid.Column="1"
-            Grid.ColumnSpan="4"
-            Margin="0, 0, 0, 10"
-            Padding="10, 7"
-            FontSize="24"
-            IsReadOnly="True"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <!-- Second row -->
-        <Button
-            x:Name="CE"
-            Grid.Row="2"
-            Grid.Column="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="CE"/>
+            <!-- First row -->
+            <Border 
+                    Margin="0, 0, 0, 10"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4">
+                <TextBox
+                    x:Name="resCreen"
+                    Padding="10, 5"
+                    FontSize="24"
+                    IsReadOnly="True"/>
+            </Border>
 
-        <Button
-            x:Name="C"
-            Grid.Row="2"
-            Grid.Column="3"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="C"/>
+            <!-- Second row -->
+            <Button
+                x:Name="CE"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="1"
+                Cursor="Hand"
+                Content="CE"/>
 
-        <Button
-            x:Name="optDiv"
-            Grid.Row="2"
-            Grid.Column="4"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="/"/>
+            <Button
+                x:Name="C"
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="1"
+                Cursor="Hand"
+                Content="C"/>
 
-        <!-- Third row -->
-        <Button
-            x:Name="num7"
-            Grid.Row="3"
-            Grid.Column="1"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="7"/>
+            <Button
+                x:Name="optDiv"
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="1"
+                Cursor="Hand"
+                Content="/"/>
 
-        <Button
-            x:Name="num8"
-            Grid.Row="3"
-            Grid.Column="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="8"/>
+            <!-- Third row -->
+            <Button
+                x:Name="num7"
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="1"
+                Cursor="Hand"
+                Content="7"/>
 
-        <Button
-            x:Name="num9"
-            Grid.Row="3"
-            Grid.Column="3"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="9"/>
+            <Button
+                x:Name="num8"
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="1"
+                Cursor="Hand"
+                Content="8"/>
 
-        <Button
-            x:Name="optMul"
-            Grid.Row="3"
-            Grid.Column="4"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="*"/>
+            <Button
+                x:Name="num9"
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="1"
+                Cursor="Hand"
+                Content="9"/>
 
-        <!-- Fourth row -->
-        <Button
-            x:Name="num4"
-            Grid.Row="4"
-            Grid.Column="1"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="4"/>
+            <Button
+                x:Name="optMul"
+                Grid.Row="2"
+                Grid.Column="3"
+                Margin="1"
+                Cursor="Hand"
+                Content="*"/>
 
-        <Button
-            x:Name="num5"
-            Grid.Row="4"
-            Grid.Column="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="5"/>
+            <!-- Fourth row -->
+            <Button
+                x:Name="num4"
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="1"
+                Cursor="Hand"
+                Content="4"/>
 
-        <Button
-            x:Name="num6"
-            Grid.Row="4"
-            Grid.Column="3"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="6"/>
+            <Button
+                x:Name="num5"
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="1"
+                Cursor="Hand"
+                Content="5"/>
 
-        <Button
-            x:Name="optMin"
-            Grid.Row="4"
-            Grid.Column="4"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="-"/>
+            <Button
+                x:Name="num6"
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="1"
+                Cursor="Hand"
+                Content="6"/>
 
-        <!-- Fifth row -->
-        <Button
-            x:Name="num1"
-            Grid.Row="5"
-            Grid.Column="1"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="1"/>
+            <Button
+                x:Name="optMin"
+                Grid.Row="3"
+                Grid.Column="3"
+                Margin="1"
+                Cursor="Hand"
+                Content="-"/>
 
-        <Button
-            x:Name="num2"
-            Grid.Row="5"
-            Grid.Column="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="2"/>
+            <!-- Fifth row -->
+            <Button
+                x:Name="num1"
+                Grid.Row="4"
+                Grid.Column="0"
+                Margin="1"
+                Cursor="Hand"
+                Content="1"/>
 
-        <Button
-            x:Name="num3"
-            Grid.Row="5"
-            Grid.Column="3"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="3"/>
+            <Button
+                x:Name="num2"
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="1"
+                Cursor="Hand"
+                Content="2"/>
 
-        <Button
-            Grid.Row="5"
-            Grid.Column="4"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="+" 
-            Click="optPlus"/>
+            <Button
+                x:Name="num3"
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="1"
+                Cursor="Hand"
+                Content="3"/>
 
-        <!-- Sixth row -->
-        <Button
-            x:Name="num0"
-            Grid.Row="6"
-            Grid.Column="1"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="0"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="3"
+                Margin="1"
+                Cursor="Hand"
+                Content="+" 
+                Click="optPlus"/>
 
-        <Button
-            x:Name="numDec"
-            Grid.Row="6"
-            Grid.Column="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="."/>
+            <!-- Sixth row -->
+            <Button
+                x:Name="num0"
+                Grid.Row="5"
+                Grid.Column="0"
+                Margin="1"
+                Cursor="Hand"
+                Content="0"/>
 
-        <Button
-            Grid.Row="6"
-            Grid.Column="3"
-            Grid.ColumnSpan="2"
-            BorderThickness="0"
-            Cursor="Hand"
-            Content="=" Click="Button_Click"/>
-    </Grid>
+            <Button
+                x:Name="numDec"
+                Grid.Row="5"
+                Grid.Column="1"
+                Margin="1"
+                Cursor="Hand"
+                Content="."/>
+
+            <Button
+                Grid.Row="5"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Margin="1"
+                Cursor="Hand"
+                Content="=" Click="Button_Click"/>
+        </Grid>
+    </Border>
 </Window>
